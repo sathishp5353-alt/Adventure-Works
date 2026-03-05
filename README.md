@@ -4,7 +4,7 @@
 
 This project analyzes sales data from the AdventureWorks dataset to understand product performance, customer behavior, and sales trends. The project integrates data from multiple sources, performs data cleaning and transformation, and builds interactive dashboards for business insights.
 
-The analysis combines sales tables (FactInternetSales and Fact_Internet_Sales_New) and enriches them with product and customer information. Various KPIs such as Total Sales, Profit, Production Cost, Yearly Sales, Monthly Sales, and Quarterly Sales are calculated to support business decision-making.
+The analysis combines sales_Fact tables (FactInternetSales and Fact_Internet_Sales_New) and enriches them with product and customer information. Various KPIs such as Total Sales, Profit, Production Cost, Yearly Sales, Monthly Sales, and Quarterly Sales are calculated to support business decision-making.
 
 The final output includes interactive dashboards and reports created in Power BI and Tableau for visualizing sales performance.
 
@@ -24,30 +24,31 @@ The final output includes interactive dashboards and reports created in Power BI
 
 The project uses the AdventureWorks dataset, which contains information about:
 
-Sales transactions
+* Sales transactions
 
-Products
+* Products
 
-Customers
+* Customers
 
-Order dates
+* Order dates
 
-Product costs
+* Product costs
 
-Sales territories
+* Sales territories
 
-Key tables used:
+## Key tables used:
 
-FactInternetSales
+* FactInternetSales
 
-Fact_Internet_Sales_New
+* Fact_Internet_Sales_New
 
-DimProduct
+* DimProduct
 
-DimCustomer
+* DimCustomer
 
-Project Workflow
-1 Data Integration
+## Project Workflow
+
+## Data Integration
 
 Combined sales data from two tables using SQL UNION ALL to create a unified dataset.
 
@@ -56,117 +57,124 @@ Example:
 SELECT * FROM FactInternetSales
 UNION ALL
 SELECT * FROM Fact_Internet_Sales_New;
-2 Data Enrichment
+
+## Data Enrichment
 
 Joined the sales data with Product and Customer tables to include additional information like:
 
-Product Name
+* Product Name
 
-Customer Full Name
+* Customer Full Name
 
-3 Date Transformation
+## Date Transformation
 
 Extracted important date fields from OrderDateKey:
 
-Order Year
+* Order Year
 
-Month Number
+* Month Number
 
-Month Name
+* Month Name
 
-Quarter
+* Quarter
 
-Financial Month
+* Financial Month
 
-Financial Quarter
+* Financial Quarter
 
-Weekday Name
+* Weekday Name
 
-4 KPI Calculations
+## KPI Calculations
 
 Key metrics calculated:
 
-Total Sales
-UnitPrice × OrderQuantity
-Production Cost
-TotalProductCost × OrderQuantity
-Profit
-Total Sales – Production Cost
-5 Sales Trend Analysis
+## Total Sales
+* UnitPrice × OrderQuantity
+
+## Production Cost
+* TotalProductCost × OrderQuantity
+
+## Profit
+* Total Sales – Production Cost
+  
+## Sales Trend Analysis
 
 Performed analysis such as:
 
-Year-wise Sales
+* Year-wise Sales
 
-Month-wise Sales
+* Month-wise Sales
 
-Quarter-wise Sales
+* Quarter-wise Sales
 
-Product Performance
+* Product Performance
 
-Customer Performance
+* Customer Performance
 
-Dashboard & Visualization
+## Dashboard & Visualization
 
 Interactive dashboards were created to visualize business insights including:
 
-Total Sales
+* Total Sales
 
-Total Profit
+* Total Profit
 
-Product Performance
+* Product Performance
 
-Customer Sales
+* Customer Sales
 
-Sales Trends
+* Sales Trends
 
-Regional Performance
+* Regional Performance
 
-Tools & Technologies Used
+## Tools & Technologies Used
 Tool	Purpose
-Excel	Data cleaning and preparation
-MySQL	Data extraction and transformation
-Power BI	Dashboard development
-Tableau	Data visualization
-GitHub	Project documentation and portfolio
-Key Insights / Outcomes
+* Excel     -	 Data cleaning and preparation
+* MySQL	    -  Data extraction and transformation
+* Power BI	-  Dashboard development
+* Tableau	  -  Data visualization
 
-Identified top-performing products based on sales revenue.
+## Key Insights / Outcomes
 
-Analyzed customer purchasing patterns and order behavior.
+* Identified top-performing products based on sales revenue.
 
-Measured overall business profitability.
+* Analyzed customer purchasing patterns and order behavior.
 
-Observed sales trends across years, months, and quarters.
+* Measured overall business profitability.
 
-Created interactive dashboards that help stakeholders quickly understand sales performance.
+* Observed sales trends across years, months, and quarters.
 
-Project Files
+* Created interactive dashboards that help stakeholders quickly understand sales performance.
 
-Excel Project.xlsx – Data cleaning and preparation
+## Project Files
 
-AdventureWorks Sales Report.sql – SQL queries and data transformation
+* Excel Project.xlsx – Data cleaning and preparation
 
-Adventure Works Project.pbix – Power BI dashboard
+* AdventureWorks Sales Report.sql – SQL queries and data transformation
 
-Tableau Adventure Works Project.twbx – Tableau dashboard
+* Adventure Works Project.pbix – Power BI dashboard
 
-Author
+* Tableau Adventure Works Project.twbx – Tableau dashboard
 
-Sathish P
+## Aspiring Data Analyst skilled in:
 
-Aspiring Data Analyst skilled in:
+* Excel
 
-Excel
+* SQL
 
-SQL
+* Power BI
 
-Power BI
+* Tableau
 
-Tableau
+* Data Cleaning
 
-Data Cleaning
+* Data Visualization
 
-Data Visualization
-# Adventure-Works
+* Data Modelling & Data Relationship
+
+* Power Query & power pivot
+
+* DAX
+  
+## Adventure-Works
 Adventure Works Sales Analysis project focuses on analyzing sales data to understand product performance, customer behavior, and sales trends. Data from multiple tables was combined and transformed using SQL, and insights were visualized using Power BI and Tableau dashboards to support better business decisions.
